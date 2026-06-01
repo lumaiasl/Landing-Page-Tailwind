@@ -822,6 +822,11 @@
       justify-content: flex-start;
     }
   }
+  .lg\:gap-72\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 72.5);
+    }
+  }
   .lg\:border-4 {
     @media (width >= 64rem) {
       border-style: var(--tw-border-style);
