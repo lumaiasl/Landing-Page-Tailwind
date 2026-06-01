@@ -219,9 +219,6 @@
   .h-30 {
     height: calc(var(--spacing) * 30);
   }
-  .h-screen {
-    height: 100vh;
-  }
   .max-h-100 {
     max-height: calc(var(--spacing) * 100);
   }
@@ -407,6 +404,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .hover\:scale-105 {
     &:hover {
       @media (hover: hover) {
@@ -424,17 +425,17 @@
       }
     }
   }
-  .hover\:bg-main {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-main);
-      }
-    }
-  }
   .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-main {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-main);
       }
     }
   }
@@ -445,6 +446,14 @@
       }
     }
   }
+  .focus\:scale-105 {
+    &:focus {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
   .focus\:border-main {
     &:focus {
       border-color: var(--color-main);
@@ -453,6 +462,11 @@
   .focus\:bg-white {
     &:focus {
       background-color: var(--color-white);
+    }
+  }
+  .focus\:text-main {
+    &:focus {
+      color: var(--color-main);
     }
   }
   .focus\:text-secondary {
@@ -543,6 +557,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -577,6 +595,7 @@
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
