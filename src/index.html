@@ -6,5 +6,173 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Landing Page</title>
   </head>
-  <body></body>
+  <body class="font-main">
+    <!--HEADER-->
+    <header
+      class="flex items-center justify-between px-8 py-9 bg-black text-white h-30"
+    >
+      <div class="flex items-center gap-4">
+        <div class="size-8">
+          <img class="" src="./img/icon_logo.png" alt="Logo do site" />
+        </div>
+        <h1 class="text-4xl">Portifólio</h1>
+      </div>
+      <div class="size-12 lg:hidden">
+        <img src="./img/icon_hamburguer.png" alt="" />
+      </div>
+      <div class="hidden lg:flex lg:flex-row gap-8 items-center">
+        <a class="text-2xl hover:text-main focus:text-main transition 200ms" href="#">Início</a>
+        <a class="text-2xl hover:text-main focus:text-main transition 200ms" href="#">Projetos</a>
+        <a href="#"
+          class="text-2xl py-2 px-4 text-white bg-main rounded-2xl focus:scale-105 hover:scale-105 transition 200ms"
+        >
+          <h2>Fale Conosco</h2>
+        </a href="#">
+      </div>
+    </header>
+    <!--HERO-->
+    <section class="text-black bg-white flex justify-center lg:h-screen">
+      <div class="bg-white flex flex-col lg:flex-row-reverse items-center lg:justify-between px-6 lg:px-30 py-16 max-w-480 gap-12">
+        <div class="lg:w-1/2 lg:max-w-175">
+          <div class="max-w-100 max-h-100 lg:max-w-175 lg:max-h-175 lg:min-w-125 lg:min-h-125">
+            <img
+              src="./img/sally.png"
+              alt="Imagem da Sally, mascote da Byron Solutions"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 lg:w-1/2 lg:w-max-140">
+          <article class="flex flex-col gap-8 lg:max-w-3/4 lg:text-start text-center">
+            <h1 class="text-5xl">
+              Conheça a <span class="text-secondary">Sally</span>
+            </h1>
+            <div class="flex flex-col gap-4">
+              <h3 class="text-2xl">
+                A mascote da <span class="text-secondary">byron.solutions</span>!
+              </h3>
+              <p class="text-base lg:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                ad nam quibusdam explicabo? Nisi facilis explicabo vel doloremque
+                iusto reprehenderit reiciendis inventore officia aliquam non.
+                Reprehenderit praesentium fugiat accusamus illum.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.byronsolutions.com/" target="_blank"
+                class="text-2xl font-semibold text-white uppercase py-2 px-4 bg-main rounded-2xl border-4 border-transparent hover:bg-transparent hover:text-secondary hover:border-main focus:bg-white focus:text-secondary focus:border-main transition 200ms"
+              >Saiba Mais
+              </a href="">
+            </div>
+          </article>
+          <article class="flex flex-row w-full items-center justify-center lg:justify-start gap-8">
+            <h4 class="text-lg">Nos contate!</h4>
+            <div class="flex gap-6">
+              <div class="size-12 hover:scale-110 transition 200ms">
+                <a href="https://www.instagram.com/byron.solutions/" target="_blank"
+                  ><img src="/src/img/icon_instagram.png" alt="ícone whatsapp"
+                /></a>
+              </div>
+              <div class="size-12 hover:scale-110 transition 200ms">
+                <a
+                  href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://br.linkedin.com/company/byronsolutions&ved=2ahUKEwjm8JyWh-SUAxXorpUCHedMGfgQFnoECBoQAQ&usg=AOvVaw1M3uqKauHiCdxQ10f8QvM5"
+                  target="_blank"
+                  ><img src="/src/img/icon_linkedin.png" alt="ícone linkedin"
+                /></a>
+              </div>
+              <div class="size-12 hover:scale-110 transition 200ms">
+                <a href="#"><img src="/src/img/icon_whatsapp.png" alt="ícone instagram" /></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--PROJETOS-->
+    <section
+      class="bg-secondary px-6 py-18 text-black flex flex-col items-center"
+    >
+      <div class="flex flex-col gap-8 lg:items-start md:items-center max-w-480">
+        <h2 class="text-white font-extrabold text-2xl uppercase">
+          Últimos projetos
+        </h2>
+        <div class="grid grid-flow-row grid-cols-1 lg:grid lg:grid-cols-3 gap-12">
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div class=""><img src="./img/Card1.webp" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 1</h3>
+              <p class="text-base text-gray">Aplicativo Desktop</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div><img src="./img/Card2.webp" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 2</h3>
+              <p class="text-base text-gray">Design</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div><img src="./img/Card3.jpg" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 3</h3>
+              <p class="text-base text-gray">Aplicativo Mobile</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div><img src="./img/Card1.webp" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 1</h3>
+              <p class="text-base text-gray">Aplicativo Desktop</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div><img src="./img/Card2.webp" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 2</h3>
+              <p class="text-base text-gray">Design</p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-white max-w-125 p-3 rounded-lg overflow-hidden gap-4 drop-shadow-lg"
+          >
+            <div><img src="./img/Card3.jpg" alt="" /></div>
+            <div>
+              <h3 class="text-lg">Projeto 3</h3>
+              <p class="text-base text-gray">Aplicativo Mobile</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER -->
+    <footer class="bg-black text-white p-8 gap-16 flex flex-col items-center">
+      <div class="lg:flex-row lg:gap-72.5 flex flex-col gap-16">
+        <div class="flex flex-col items-center gap-3 lg:w-1/2">
+          <div class="size-16"><img src="./img/icon_logo.png" alt="" /></div>
+          <p>Design por André Franco • DPJ 2025</p>
+        </div>
+        <div class="text-center flex flex-col gap-2 lg:w-1/2 max-w-100">
+          <h2 class="text-2xl uppercase">Sobre Mim</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis ab
+            repudiandae recusandae sit! Quibusdam dicta asperiores, iste tempore
+            assumenda voluptatum!
+          </p>
+        </div>
+      </div>
+      <div class="text-center text-2xl lg:flex lg:items-center gap-4">
+        <p>Desenvolvido por</p>
+        <div class="max-w-100"><img src="./img/logo_byron.png" alt="" /></div>
+      </div>
+    </footer>
+  </body>
 </html>
